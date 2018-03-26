@@ -1,4 +1,4 @@
-#Валидатор докуметов
+# Валидатор докуметов
 ### Доступные проверки
 
 | код | проверка |
@@ -16,18 +16,18 @@
 | snils | СНИЛС |
 | inn_or_snils | ИНН или СНИЛС |
 
-##Установка
-###lumen
+## Установка
+### lumen
 bootstrap
 ```php
 $app->register(Tochka\Validators\DocumentValidatorServiceProvider::class);
 ```
-###Laravel >=5.5
+### Laravel >=5.5
 Провайдер регистрируется атомаматически
-###laravel <=5.4
+### laravel <=5.4
 Зарегистировать пройвадера в configs/app.php
 
-##tests
+## tests
 ```php
 phpunit vendor/tochka-developers/document-validator/tests/DocumentValidatorTest.php
 ```
