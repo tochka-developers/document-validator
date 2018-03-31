@@ -12,7 +12,7 @@ class DocumentValidatorServiceProvider extends ServiceProvider
         $validator = $this->app->make('validator');
 
         $validator->extend('inn', function ($attribute, $value, $parameters) {
-            $type = $parameters[0];
+            $type = $parameters[0] ?? null;
 
             switch ($type) {
                 case 'ip':
