@@ -230,7 +230,7 @@ class DocumentValidator
      */
     public static function isRussianResidencePermitCode($value): bool
     {
-        return is_numeric($value) && \strlen($value) === 5;
+        return is_numeric($value) && \strlen($value) === 7;
     }
 
     public static function isInnOrSnils($value): bool

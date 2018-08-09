@@ -83,8 +83,8 @@ class DocumentValidatorTest extends TestCase
 
     public function testIsRussianResidencePermitCode()
     {
-        $this->assertTrue(DocumentValidator::isRussianResidencePermitCode(60645));
-        $this->assertTrue(DocumentValidator::isRussianResidencePermitCode('60645'));
+        $this->assertTrue(DocumentValidator::isRussianResidencePermitCode(6064500));
+        $this->assertTrue(DocumentValidator::isRussianResidencePermitCode('6064500'));
         $this->assertFalse(DocumentValidator::isRussianResidencePermitCode('6'));
         $this->assertFalse(DocumentValidator::isRussianResidencePermitCode(new \stdClass()));
     }
