@@ -139,7 +139,7 @@ class DocumentValidator
             3 * $value{6} +
             2 * $value{7} +
             $value{8};
-        if ($s > 101) {
+        if ($s >= 101) {
             $s = $s % 101;
         }
         if ($s == 100 || $s == 0) {
