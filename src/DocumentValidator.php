@@ -45,34 +45,34 @@ class DocumentValidator
             }
         }
 
-        $s = (7 * $value{0} +
-                2 * $value{1} +
-                4 * $value{2} +
-                10 * $value{3} +
-                3 * $value{4} +
-                5 * $value{5} +
-                9 * $value{6} +
-                4 * $value{7} +
-                6 * $value{8} +
-                8 * $value{9}) % 11;
+        $s = (7 * $value[0] +
+                2 * $value[1] +
+                4 * $value[2] +
+                10 * $value[3] +
+                3 * $value[4] +
+                5 * $value[5] +
+                9 * $value[6] +
+                4 * $value[7] +
+                6 * $value[8] +
+                8 * $value[9]) % 11;
         if ($s == 10) {
             $s = 0;
         }
-        $s2 = (3 * $value{0} +
-                7 * $value{1} +
-                2 * $value{2} +
-                4 * $value{3} +
-                10 * $value{4} +
-                3 * $value{5} +
-                5 * $value{6} +
-                9 * $value{7} +
-                4 * $value{8} +
-                6 * $value{9} +
-                8 * $value{10}) % 11;
+        $s2 = (3 * $value[0] +
+                7 * $value[1] +
+                2 * $value[2] +
+                4 * $value[3] +
+                10 * $value[4] +
+                3 * $value[5] +
+                5 * $value[6] +
+                9 * $value[7] +
+                4 * $value[8] +
+                6 * $value[9] +
+                8 * $value[10]) % 11;
         if ($s2 == 10) {
             $s2 = 0;
         }
-        if ($s != $value{10} || $s2 != $value{11}) {
+        if ($s != $value[10] || $s2 != $value[11]) {
             return false;
         }
 
@@ -95,19 +95,19 @@ class DocumentValidator
             }
         }
 
-        $s = (2 * $value{0} +
-                4 * $value{1} +
-                10 * $value{2} +
-                3 * $value{3} +
-                5 * $value{4} +
-                9 * $value{5} +
-                4 * $value{6} +
-                6 * $value{7} +
-                8 * $value{8}) % 11;
+        $s = (2 * $value[0] +
+                4 * $value[1] +
+                10 * $value[2] +
+                3 * $value[3] +
+                5 * $value[4] +
+                9 * $value[5] +
+                4 * $value[6] +
+                6 * $value[7] +
+                8 * $value[8]) % 11;
         if ($s == 10) {
             $s = 0;
         }
-        if ($s != $value{9}) {
+        if ($s != $value[9]) {
             return false;
         }
 
@@ -130,15 +130,15 @@ class DocumentValidator
             }
         }
 
-        $s = 9 * $value{0} +
-            8 * $value{1} +
-            7 * $value{2} +
-            6 * $value{3} +
-            5 * $value{4} +
-            4 * $value{5} +
-            3 * $value{6} +
-            2 * $value{7} +
-            $value{8};
+        $s = 9 * $value[0] +
+            8 * $value[1] +
+            7 * $value[2] +
+            6 * $value[3] +
+            5 * $value[4] +
+            4 * $value[5] +
+            3 * $value[6] +
+            2 * $value[7] +
+            $value[8];
         if ($s >= 101) {
             $s = $s % 101;
         }
