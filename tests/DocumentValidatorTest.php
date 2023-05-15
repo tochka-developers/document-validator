@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests;
+namespace Tochka\Validators\Tests;
 
 use PHPUnit\Framework\TestCase;
 use Tochka\Validators\DocumentValidator;

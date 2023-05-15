@@ -2,12 +2,15 @@
 
 namespace Tochka\Validators;
 
+use Illuminate\Contracts\Container\BindingResolutionException;
 use Illuminate\Support\ServiceProvider;
 
 class DocumentValidatorServiceProvider extends ServiceProvider
 {
-
-    public function boot()
+    /**
+     * @throws BindingResolutionException
+     */
+    public function boot(): void
     {
         $validator = $this->app->make('validator');
 
@@ -52,7 +55,7 @@ class DocumentValidatorServiceProvider extends ServiceProvider
             return DocumentValidator::isRussianResidencePermitCode($value);
         });
 
-        $validator->extend('snils', function($attribute, $value) {
+        $validator->extend('snils', function ($attribute, $value) {
             return DocumentValidator::isSnils($value);
         });
 

@@ -22,10 +22,8 @@ bootstrap
 ```php
 $app->register(Tochka\Validators\DocumentValidatorServiceProvider::class);
 ```
-### Laravel >=5.5
-Провайдер регистрируется атомаматически
-### laravel <=5.4
-Зарегистировать пройвадера в configs/app.php
+### Laravel >=6.0
+Провайдер регистрируется автоматически
 
 ## tests
 ```php
